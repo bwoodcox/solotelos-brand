@@ -1,0 +1,64 @@
+<svg width="640" height="400" viewBox="0 0 640 400" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="Montserrat, -apple-system, 'Segoe UI', sans-serif">
+  <defs>
+    <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4890A" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#D4890A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="400" rx="14" fill="#0D0D0D"/>
+  <rect x="0.5" y="0.5" width="639" height="399" rx="13.5" stroke="#242424"/>
+
+  <!-- connection lines -->
+  <g stroke="#2c2c2c" stroke-width="1.4">
+    <path d="M126 96 Q 220 140 268 178" />
+    <path d="M110 200 L 250 200" />
+    <path d="M126 304 Q 220 260 268 222" />
+    <path d="M514 96 Q 420 140 372 178" />
+    <path d="M530 200 L 390 200" />
+    <path d="M514 304 Q 420 260 372 222" />
+  </g>
+  <!-- animated-feel data dots -->
+  <g fill="#D4890A">
+    <circle cx="196" cy="126" r="3" opacity="0.9"/>
+    <circle cx="180" cy="200" r="3" opacity="0.7"/>
+    <circle cx="196" cy="274" r="3" opacity="0.9"/>
+    <circle cx="444" cy="126" r="3" opacity="0.7"/>
+    <circle cx="460" cy="200" r="3" opacity="0.9"/>
+    <circle cx="444" cy="274" r="3" opacity="0.7"/>
+  </g>
+
+  <!-- hub -->
+  <circle cx="320" cy="200" r="110" fill="url(#hubGlow)"/>
+  <circle cx="320" cy="200" r="58" fill="#141414" stroke="#D4890A" stroke-width="1.6"/>
+  <g transform="translate(288,168) scale(0.8)">
+    <line x1="10" y1="66" x2="72" y2="66" stroke="#333" stroke-width="2"/>
+    <line x1="10" y1="52" x2="72" y2="52" stroke="#2b2b2b" stroke-width="2"/>
+    <line x1="10" y1="38" x2="72" y2="38" stroke="#242424" stroke-width="2"/>
+    <path d="M10 66 Q26 48 38 40 Q50 32 60 27" stroke="#D4890A" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <line x1="64" y1="10" x2="64" y2="15" stroke="#D4890A" stroke-width="3.5" stroke-linecap="round"/>
+    <rect x="60" y="15" width="8" height="12" rx="1.5" fill="none" stroke="#D4890A" stroke-width="3.5"/>
+    <line x1="64" y1="27" x2="64" y2="33" stroke="#D4890A" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- broker chips (left) -->
+  <g font-size="12" fill="#bbb">
+    <rect x="20" y="76" width="118" height="40" rx="20" fill="#141414" stroke="#2a2a2a"/>
+    <text x="79" y="101" text-anchor="middle">Schwab</text>
+    <rect x="8" y="180" width="118" height="40" rx="20" fill="#141414" stroke="#2a2a2a"/>
+    <text x="67" y="205" text-anchor="middle">Fidelity</text>
+    <rect x="20" y="284" width="118" height="40" rx="20" fill="#141414" stroke="#2a2a2a"/>
+    <text x="79" y="309" text-anchor="middle">E*TRADE</text>
+  </g>
+  <!-- broker chips (right) -->
+  <g font-size="12" fill="#bbb">
+    <rect x="502" y="76" width="118" height="40" rx="20" fill="#141414" stroke="#2a2a2a"/>
+    <text x="561" y="101" text-anchor="middle">Robinhood</text>
+    <rect x="514" y="180" width="118" height="40" rx="20" fill="#141414" stroke="#2a2a2a"/>
+    <text x="573" y="205" text-anchor="middle">IBKR</text>
+    <rect x="502" y="284" width="118" height="40" rx="20" fill="#141414" stroke="#2a2a2a"/>
+    <text x="561" y="309" text-anchor="middle">Webull</text>
+  </g>
+
+  <text x="320" y="358" font-size="13" fill="#ccc" text-anchor="middle" font-weight="300">Every broker. One journal.</text>
+  <text x="320" y="378" font-size="10" fill="#555" text-anchor="middle">Read-only connections · Trades import automatically</text>
+</svg>

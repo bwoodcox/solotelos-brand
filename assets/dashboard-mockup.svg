@@ -1,0 +1,221 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="Montserrat, -apple-system, 'Segoe UI', sans-serif">
+  <defs>
+    <linearGradient id="curveFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4890A" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#D4890A" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="760" rx="16"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <!-- App background -->
+    <rect width="1200" height="760" fill="#0D0D0D"/>
+    <rect x="0.5" y="0.5" width="1199" height="759" rx="15.5" stroke="#242424"/>
+
+    <!-- ── Sidebar ── -->
+    <rect width="216" height="760" fill="#0A0A0A"/>
+    <line x1="216" y1="0" x2="216" y2="760" stroke="#1c1c1c"/>
+
+    <!-- Logo -->
+    <g transform="translate(24,26)">
+      <g transform="scale(0.42)">
+        <line x1="10" y1="66" x2="72" y2="66" stroke="#272727" stroke-width="2"/>
+        <line x1="10" y1="52" x2="72" y2="52" stroke="#222" stroke-width="2"/>
+        <path d="M10 66 Q26 48 38 40 Q50 32 60 27" stroke="#D4890A" stroke-width="5" stroke-linecap="round" fill="none"/>
+        <line x1="64" y1="10" x2="64" y2="15" stroke="#D4890A" stroke-width="4" stroke-linecap="round"/>
+        <rect x="60" y="15" width="8" height="12" rx="1.5" fill="none" stroke="#D4890A" stroke-width="4"/>
+        <line x1="64" y1="27" x2="64" y2="33" stroke="#D4890A" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <text x="42" y="23" font-size="16" fill="#ffffff" font-weight="300">Solo<tspan fill="#D4890A" font-weight="700" font-family="Philosopher, Georgia, serif">Telos</tspan></text>
+    </g>
+    <text x="24" y="76" font-size="8" letter-spacing="2.5" fill="#3a3a3a">TELOS JOURNAL</text>
+
+    <!-- Nav items -->
+    <g font-size="12" fill="#666">
+      <rect x="12" y="102" width="192" height="36" rx="8" fill="#1C1C1C"/>
+      <rect x="12" y="102" width="3" height="36" rx="1.5" fill="#D4890A"/>
+      <text x="46" y="125" fill="#ffffff">Dashboard</text>
+      <text x="46" y="169">Trades</text>
+      <text x="46" y="213">Journal</text>
+      <text x="46" y="257">Analytics</text>
+      <text x="46" y="301">Calendar</text>
+      <text x="46" y="345">Setups</text>
+      <!-- nav icons -->
+      <g stroke="#555" stroke-width="1.5" fill="none">
+        <rect x="24" y="112" width="12" height="12" rx="2" stroke="#D4890A"/>
+        <path d="M24 158 l4 4 8-8" transform="translate(0,2)"/>
+        <rect x="24" y="200" width="12" height="12" rx="2"/>
+        <path d="M24 254 l3-5 3 3 6-8" stroke-linecap="round"/>
+        <rect x="24" y="288" width="12" height="12" rx="2"/>
+        <circle cx="30" cy="338" r="6"/>
+      </g>
+    </g>
+
+    <!-- Connected brokers -->
+    <text x="24" y="646" font-size="8" letter-spacing="2" fill="#3a3a3a">CONNECTED</text>
+    <g font-size="10" fill="#888">
+      <rect x="24" y="658" width="80" height="24" rx="12" fill="#141414" stroke="#242424"/>
+      <circle cx="38" cy="670" r="3" fill="#3fa876"/><text x="47" y="674">Schwab</text>
+      <rect x="110" y="658" width="76" height="24" rx="12" fill="#141414" stroke="#242424"/>
+      <circle cx="124" cy="670" r="3" fill="#3fa876"/><text x="133" y="674">Fidelity</text>
+      <rect x="24" y="688" width="86" height="24" rx="12" fill="#141414" stroke="#242424"/>
+      <circle cx="38" cy="700" r="3" fill="#3fa876"/><text x="47" y="704">E*TRADE</text>
+    </g>
+
+    <!-- ── Top bar ── -->
+    <text x="248" y="46" font-size="19" fill="#ffffff" font-weight="300">Dashboard</text>
+    <text x="248" y="66" font-size="11" fill="#555">July 2026 · 46 trades synced automatically</text>
+    <rect x="1042" y="28" width="126" height="34" rx="8" fill="#D4890A"/>
+    <text x="1105" y="49" font-size="12" fill="#0A0A0A" font-weight="600" text-anchor="middle">+ New note</text>
+    <rect x="948" y="28" width="82" height="34" rx="8" fill="#141414" stroke="#242424"/>
+    <text x="989" y="49" font-size="12" fill="#999" text-anchor="middle">Sync ✓</text>
+
+    <!-- ── Stat cards ── -->
+    <g>
+      <rect x="248" y="92" width="218" height="88" rx="10" fill="#141414" stroke="#222"/>
+      <text x="268" y="118" font-size="9" letter-spacing="1.5" fill="#555">NET P&amp;L — JULY</text>
+      <text x="268" y="150" font-size="24" fill="#ffffff" font-weight="300">+$4,218</text>
+      <text x="268" y="168" font-size="10" fill="#3fa876">▲ 12.4% vs June</text>
+
+      <rect x="482" y="92" width="218" height="88" rx="10" fill="#141414" stroke="#222"/>
+      <text x="502" y="118" font-size="9" letter-spacing="1.5" fill="#555">WIN RATE</text>
+      <text x="502" y="150" font-size="24" fill="#ffffff" font-weight="300">58%</text>
+      <text x="502" y="168" font-size="10" fill="#666">27W · 19L</text>
+
+      <rect x="716" y="92" width="218" height="88" rx="10" fill="#141414" stroke="#222"/>
+      <text x="736" y="118" font-size="9" letter-spacing="1.5" fill="#555">PROFIT FACTOR</text>
+      <text x="736" y="150" font-size="24" fill="#D4890A" font-weight="400">1.92</text>
+      <text x="736" y="168" font-size="10" fill="#666">Target ≥ 1.5</text>
+
+      <rect x="950" y="92" width="218" height="88" rx="10" fill="#141414" stroke="#222"/>
+      <text x="970" y="118" font-size="9" letter-spacing="1.5" fill="#555">AVG R-MULTIPLE</text>
+      <text x="970" y="150" font-size="24" fill="#ffffff" font-weight="300">+0.84R</text>
+      <text x="970" y="168" font-size="10" fill="#3fa876">▲ 0.2R vs June</text>
+    </g>
+
+    <!-- ── Equity curve panel ── -->
+    <rect x="248" y="204" width="600" height="272" rx="10" fill="#141414" stroke="#222"/>
+    <text x="272" y="234" font-size="12" fill="#ccc">Equity curve</text>
+    <text x="272" y="250" font-size="9" fill="#555">Cumulative P&amp;L · last 90 days</text>
+    <g font-size="9" fill="#444" text-anchor="end">
+      <text x="822" y="240" fill="#D4890A">● All trades</text>
+    </g>
+    <!-- grid -->
+    <g stroke="#1d1d1d">
+      <line x1="272" y1="290" x2="824" y2="290"/>
+      <line x1="272" y1="330" x2="824" y2="330"/>
+      <line x1="272" y1="370" x2="824" y2="370"/>
+      <line x1="272" y1="410" x2="824" y2="410"/>
+      <line x1="272" y1="450" x2="824" y2="450"/>
+    </g>
+    <!-- curve -->
+    <path d="M272 442 L308 434 L344 440 L380 420 L416 424 L452 402 L488 408 L524 386 L560 392 L596 366 L632 372 L668 344 L704 350 L740 322 L776 300 L812 282 L824 276 L824 450 L272 450 Z" fill="url(#curveFill)"/>
+    <path d="M272 442 L308 434 L344 440 L380 420 L416 424 L452 402 L488 408 L524 386 L560 392 L596 366 L632 372 L668 344 L704 350 L740 322 L776 300 L812 282 L824 276" stroke="#D4890A" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+    <circle cx="824" cy="276" r="4" fill="#D4890A"/>
+    <circle cx="824" cy="276" r="8" fill="#D4890A" opacity="0.25"/>
+    <g font-size="9" fill="#444">
+      <text x="272" y="466">Apr</text><text x="450" y="466">May</text><text x="630" y="466">Jun</text><text x="800" y="466">Jul</text>
+    </g>
+
+    <!-- ── Calendar heatmap panel ── -->
+    <rect x="872" y="204" width="296" height="272" rx="10" fill="#141414" stroke="#222"/>
+    <text x="896" y="234" font-size="12" fill="#ccc">July P&amp;L calendar</text>
+    <text x="896" y="250" font-size="9" fill="#555">Daily net result</text>
+    <g font-size="8" fill="#444" text-anchor="middle">
+      <text x="912" y="272">M</text><text x="948" y="272">T</text><text x="984" y="272">W</text><text x="1020" y="272">T</text><text x="1056" y="272">F</text><text x="1092" y="272">S</text><text x="1128" y="272">S</text>
+    </g>
+    <g>
+      <!-- wk1 -->
+      <rect x="898" y="282" width="28" height="28" rx="6" fill="#1a1a1a"/>
+      <rect x="934" y="282" width="28" height="28" rx="6" fill="#25563f"/>
+      <rect x="970" y="282" width="28" height="28" rx="6" fill="#3fa876"/>
+      <rect x="1006" y="282" width="28" height="28" rx="6" fill="#5a2626"/>
+      <rect x="1042" y="282" width="28" height="28" rx="6" fill="#25563f"/>
+      <rect x="1078" y="282" width="28" height="28" rx="6" fill="#161616"/>
+      <rect x="1114" y="282" width="28" height="28" rx="6" fill="#161616"/>
+      <!-- wk2 -->
+      <rect x="898" y="318" width="28" height="28" rx="6" fill="#3fa876"/>
+      <rect x="934" y="318" width="28" height="28" rx="6" fill="#25563f"/>
+      <rect x="970" y="318" width="28" height="28" rx="6" fill="#1a1a1a"/>
+      <rect x="1006" y="318" width="28" height="28" rx="6" fill="#25563f"/>
+      <rect x="1042" y="318" width="28" height="28" rx="6" fill="#813434"/>
+      <rect x="1078" y="318" width="28" height="28" rx="6" fill="#161616"/>
+      <rect x="1114" y="318" width="28" height="28" rx="6" fill="#161616"/>
+      <!-- wk3 (current) -->
+      <rect x="898" y="354" width="28" height="28" rx="6" fill="#25563f"/>
+      <rect x="934" y="354" width="28" height="28" rx="6" fill="#3fa876"/>
+      <rect x="970" y="354" width="28" height="28" rx="6" fill="#0D0D0D" stroke="#D4890A" stroke-width="1.5"/>
+      <rect x="1006" y="354" width="28" height="28" rx="6" fill="#141414" stroke="#242424"/>
+      <rect x="1042" y="354" width="28" height="28" rx="6" fill="#141414" stroke="#242424"/>
+      <rect x="1078" y="354" width="28" height="28" rx="6" fill="#161616"/>
+      <rect x="1114" y="354" width="28" height="28" rx="6" fill="#161616"/>
+      <!-- wk4 -->
+      <rect x="898" y="390" width="28" height="28" rx="6" fill="#141414" stroke="#242424"/>
+      <rect x="934" y="390" width="28" height="28" rx="6" fill="#141414" stroke="#242424"/>
+      <rect x="970" y="390" width="28" height="28" rx="6" fill="#141414" stroke="#242424"/>
+      <rect x="1006" y="390" width="28" height="28" rx="6" fill="#141414" stroke="#242424"/>
+      <rect x="1042" y="390" width="28" height="28" rx="6" fill="#141414" stroke="#242424"/>
+      <rect x="1078" y="390" width="28" height="28" rx="6" fill="#161616"/>
+      <rect x="1114" y="390" width="28" height="28" rx="6" fill="#161616"/>
+    </g>
+    <g font-size="9">
+      <text x="896" y="446" fill="#3fa876">■ Profit</text>
+      <text x="952" y="446" fill="#c25050">■ Loss</text>
+      <text x="996" y="446" fill="#555">■ No trades</text>
+      <text x="1076" y="446" fill="#D4890A">□ Today</text>
+    </g>
+
+    <!-- ── Recent trades table ── -->
+    <rect x="248" y="500" width="920" height="232" rx="10" fill="#141414" stroke="#222"/>
+    <text x="272" y="532" font-size="12" fill="#ccc">Recent trades</text>
+    <text x="1144" y="532" font-size="10" fill="#D4890A" text-anchor="end">View all →</text>
+    <g font-size="9" letter-spacing="1.2" fill="#484848">
+      <text x="272" y="560">SYMBOL</text>
+      <text x="380" y="560">SIDE</text>
+      <text x="470" y="560">SETUP</text>
+      <text x="640" y="560">BROKER</text>
+      <text x="790" y="560">R</text>
+      <text x="900" y="560">P&amp;L</text>
+      <text x="1030" y="560">JOURNALED</text>
+    </g>
+    <line x1="264" y1="572" x2="1152" y2="572" stroke="#1e1e1e"/>
+
+    <g font-size="12">
+      <!-- row 1 -->
+      <text x="272" y="598" fill="#fff" font-weight="600">NVDA</text>
+      <text x="380" y="598" fill="#3fa876">Long</text>
+      <rect x="466" y="584" width="104" height="20" rx="10" fill="#1C1C1C"/><text x="518" y="598" fill="#D4890A" font-size="10" text-anchor="middle">Breakout</text>
+      <text x="640" y="598" fill="#777">Schwab</text>
+      <text x="790" y="598" fill="#3fa876">+2.1R</text>
+      <text x="900" y="598" fill="#3fa876">+$1,240</text>
+      <text x="1030" y="598" fill="#3fa876" font-size="11">✓ Yes</text>
+      <line x1="264" y1="612" x2="1152" y2="612" stroke="#1a1a1a"/>
+      <!-- row 2 -->
+      <text x="272" y="638" fill="#fff" font-weight="600">AAPL</text>
+      <text x="380" y="638" fill="#3fa876">Long</text>
+      <rect x="466" y="624" width="104" height="20" rx="10" fill="#1C1C1C"/><text x="518" y="638" fill="#D4890A" font-size="10" text-anchor="middle">Pullback</text>
+      <text x="640" y="638" fill="#777">Fidelity</text>
+      <text x="790" y="638" fill="#c25050">−0.8R</text>
+      <text x="900" y="638" fill="#c25050">−$310</text>
+      <text x="1030" y="638" fill="#3fa876" font-size="11">✓ Yes</text>
+      <line x1="264" y1="652" x2="1152" y2="652" stroke="#1a1a1a"/>
+      <!-- row 3 -->
+      <text x="272" y="678" fill="#fff" font-weight="600">MSFT</text>
+      <text x="380" y="678" fill="#c25050">Short</text>
+      <rect x="466" y="664" width="104" height="20" rx="10" fill="#1C1C1C"/><text x="518" y="678" fill="#D4890A" font-size="10" text-anchor="middle">Reversal</text>
+      <text x="640" y="678" fill="#777">E*TRADE</text>
+      <text x="790" y="678" fill="#3fa876">+1.4R</text>
+      <text x="900" y="678" fill="#3fa876">+$720</text>
+      <text x="1030" y="678" fill="#D4890A" font-size="11">● Pending</text>
+      <line x1="264" y1="692" x2="1152" y2="692" stroke="#1a1a1a"/>
+      <!-- row 4 -->
+      <text x="272" y="718" fill="#fff" font-weight="600">AMD</text>
+      <text x="380" y="718" fill="#3fa876">Long</text>
+      <rect x="466" y="704" width="104" height="20" rx="10" fill="#1C1C1C"/><text x="518" y="718" fill="#D4890A" font-size="10" text-anchor="middle">Earnings</text>
+      <text x="640" y="718" fill="#777">Schwab</text>
+      <text x="790" y="718" fill="#3fa876">+1.9R</text>
+      <text x="900" y="718" fill="#3fa876">+$980</text>
+      <text x="1030" y="718" fill="#3fa876" font-size="11">✓ Yes</text>
+    </g>
+  </g>
+</svg>
