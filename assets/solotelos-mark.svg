@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="16 12 56 56" fill="none" role="img" aria-label="SoloTelos mark">
+  <title>SoloTelos mark — Slate Blue T / Silver S</title>
+  <path d="M30 16 L58 16" stroke="#5B8DB8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M44 16 L44 62" stroke="#5B8DB8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M58 24 C 46 20, 33 24, 33 34 C 33 42, 43 44, 47 46 C 55 49, 57 53, 55 58 C 52 65, 38 67, 31 61 L34 57 C 40 61, 49 60, 51 56 C 52 53, 49 50, 44 48 C 36 45, 29 42, 29 34 C 29 26, 44 18, 58 24 Z" fill="#C7CED5" transform="rotate(10 43 41)"/>
+</svg>

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Telos Journal — the stock trade journal that fills itself in. Connect Schwab, Fidelity, E*TRADE and more. By SoloTelos." />
   <title>Telos Journal — The Trade Journal That Fills Itself In | SoloTelos</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <script>(function(){try{var t=localStorage.getItem('solotelos-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Philosopher:wght@400;700&display=swap" rel="stylesheet" />
   <style>
@@ -25,12 +26,15 @@
       --text: #ccc;
       --muted: #999;            /* 6.9:1 on bg */
       --faint: #888;            /* 5.6:1 on bg */
-      --accent: #D4890A;        /* 7.0:1 on bg */
+      --accent: #5B8DB8;        /* Slate Blue — 5.2:1 on bg */
+      --btn-fg: #0A0A0A;        /* button label on slate (dark) */
+      --logo-t: #5B8DB8;        /* Slate Blue — logo mark T */
+      --logo-s: #C7CED5;        /* Silver — logo mark S */
       --success: #3fa876;
       --ghost-border: #333;
-      --pill-border: #3a2c10;
-      --pill-bg: rgba(212,137,10,0.07);
-      --glow: rgba(212,137,10,0.1);
+      --pill-border: #24384a;
+      --pill-bg: rgba(91,141,184,0.10);
+      --glow: rgba(91,141,184,0.12);
       --shadow: rgba(0,0,0,0.55);
       --input-bg: #141414;
       --input-border: #2a2a2a;
@@ -38,7 +42,7 @@
       --band-bg: #F2ECE0;
       --band-heading: #0A0A0A;
       --band-body: #6d6759;     /* 4.8:1 on cream */
-      --band-accent: #935E06;   /* 4.6:1 on cream */
+      --band-accent: #305A82;   /* Slate — 5.9:1 on cream */
       --band-success: #1E7A4C;
       --band-input-bg: #fff;
       --band-input-border: #ddd5c4;
@@ -56,12 +60,15 @@
       --text: #3b3831;
       --muted: #5C564A;         /* 6.2:1 on cream, 7.3:1 on white */
       --faint: #6d6759;         /* 4.8:1 on cream, 5.6:1 on white */
-      --accent: #935E06;        /* 4.6:1 on cream, 5.5:1 on white */
+      --accent: #305A82;        /* Slate — 5.9:1 on cream */
+      --btn-fg: #FFFFFF;        /* button label on slate (light) */
+      --logo-t: #305A82;        /* Slate Blue (deepened) — 5.9:1 on cream */
+      --logo-s: #6E7A85;        /* Graphite — logo mark S on light */
       --success: #1E7A4C;
       --ghost-border: #c9c0ab;
-      --pill-border: #dcc188;
-      --pill-bg: rgba(212,137,10,0.10);
-      --glow: rgba(212,137,10,0.15);
+      --pill-border: #b8c9da;
+      --pill-bg: rgba(48,90,130,0.10);
+      --glow: rgba(91,141,184,0.16);
       --shadow: rgba(70,55,25,0.18);
       --input-bg: #FFFFFF;
       --input-border: #d5ccb8;
@@ -69,7 +76,7 @@
       --band-bg: #0A0A0A;
       --band-heading: #fff;
       --band-body: #999;
-      --band-accent: #D4890A;
+      --band-accent: #7FA8CE;
       --band-success: #3fa876;
       --band-input-bg: #141414;
       --band-input-border: #333;
@@ -82,6 +89,8 @@
     .wrap { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
     .solo { font-weight: 400; color: var(--heading); }
     .telos { font-family: 'Philosopher', serif; font-weight: 700; color: var(--accent); }
+    /* Logo lockup uses the slate/silver brand color; gold stays the action accent */
+    .nav-logo .telos, .foot-logo .telos { color: var(--logo-t); }
 
     /* Nav */
     nav { position: sticky; top: 0; z-index: 50; background: var(--bg-nav); backdrop-filter: blur(12px); border-bottom: 1px solid var(--hairline); }
@@ -93,7 +102,7 @@
     .nav-links a:hover { color: var(--heading); }
     .nav-links a.active { color: var(--accent); }
     .btn {
-      display: inline-block; background: #D4890A; color: #0A0A0A;
+      display: inline-block; background: var(--accent); color: var(--btn-fg);
       font-weight: 700; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
       padding: 13px 26px; border-radius: 8px; border: none; cursor: pointer;
       transition: filter 0.2s, transform 0.2s; font-family: 'Montserrat', sans-serif;
@@ -137,7 +146,7 @@
     .hero-mock { margin-top: 64px; }
     .mock-frame {
       display: block; border: 1px solid var(--border); border-radius: 18px; overflow: hidden;
-      background: #0D0D0D; box-shadow: 0 40px 90px var(--shadow), 0 0 100px rgba(212,137,10,0.06);
+      background: #0D0D0D; box-shadow: 0 40px 90px var(--shadow), 0 0 100px rgba(91,141,184,0.06);
     }
     .mock-frame img { display: block; width: 100%; height: auto; }
 
@@ -187,7 +196,7 @@
     .step .n {
       position: absolute; top: -18px; left: 28px;
       width: 36px; height: 36px; border-radius: 50%;
-      background: #D4890A; color: #0A0A0A;
+      background: var(--accent); color: var(--btn-fg);
       font-weight: 700; font-size: 15px;
       display: flex; align-items: center; justify-content: center;
     }
@@ -217,7 +226,7 @@
     /* Footer */
     footer { border-top: 1px solid var(--hairline); padding: 48px 0; }
     .foot-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
-    .foot-logo { display: flex; align-items: baseline; font-size: 17px; }
+    .foot-logo { display: flex; align-items: center; gap: 9px; font-size: 17px; }
     .foot-links { display: flex; gap: 28px; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); }
     .foot-links a:hover { color: var(--muted); }
     .foot-copy { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--faint); }
@@ -243,13 +252,10 @@
   <nav>
     <div class="wrap nav-inner">
       <a class="nav-logo" href="index.html">
-        <svg width="34" height="34" viewBox="0 0 80 80" fill="none" aria-hidden="true">
-          <line x1="10" y1="66" x2="72" y2="66" stroke="#8a8a8a" stroke-width="2" opacity="0.35"/>
-          <line x1="10" y1="52" x2="72" y2="52" stroke="#8a8a8a" stroke-width="2" opacity="0.25"/>
-          <path d="M10 66 Q26 48 38 40 Q50 32 60 27" stroke="#D4890A" stroke-width="4" stroke-linecap="round" fill="none"/>
-          <line x1="64" y1="10" x2="64" y2="15" stroke="#D4890A" stroke-width="3.5" stroke-linecap="round"/>
-          <rect x="60" y="15" width="8" height="12" rx="1.5" fill="none" stroke="#D4890A" stroke-width="3.5"/>
-          <line x1="64" y1="27" x2="64" y2="33" stroke="#D4890A" stroke-width="3.5" stroke-linecap="round"/>
+        <svg width="30" height="30" viewBox="16 12 56 56" fill="none" aria-hidden="true">
+          <path d="M30 16 L58 16" stroke="var(--logo-t)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M44 16 L44 62" stroke="var(--logo-t)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M58 24 C 46 20, 33 24, 33 34 C 33 42, 43 44, 47 46 C 55 49, 57 53, 55 58 C 52 65, 38 67, 31 61 L34 57 C 40 61, 49 60, 51 56 C 52 53, 49 50, 44 48 C 36 45, 29 42, 29 34 C 29 26, 44 18, 58 24 Z" fill="var(--logo-s)" transform="rotate(10 43 41)"/>
         </svg>
         <span><span class="solo">Solo</span><span class="telos">Telos</span></span>
       </a>
@@ -324,42 +330,42 @@
       <div class="features-grid">
         <div class="feature">
           <div class="f-icon">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2v12m0 0l-4-4m4 4l4-4" stroke="#D4890A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 16v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke="#D4890A" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2v12m0 0l-4-4m4 4l4-4" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 16v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/></svg>
           </div>
           <h3>Automatic trade import</h3>
           <p>Read-only broker connections sync every fill — entries, exits, partials, fees. Your journal is always complete and always current.</p>
         </div>
         <div class="feature">
           <div class="f-icon">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M3 18L8 12l4 3 7-9" stroke="#D4890A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M3 18L8 12l4 3 7-9" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <h3>Performance analytics</h3>
           <p>Win rate, profit factor, expectancy, average R — sliced by setup, symbol, time of day, and hold time. Find the edge; cut the leak.</p>
         </div>
         <div class="feature">
           <div class="f-icon">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M4 7h9M4 11h14M4 15h11" stroke="#D4890A" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M4 7h9M4 11h14M4 15h11" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/></svg>
           </div>
           <h3>Setup tagging</h3>
           <p>Tag every trade with your playbook — breakout, pullback, reversal, earnings. Then see which setups actually pay you.</p>
         </div>
         <div class="feature">
           <div class="f-icon">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M5 3h12a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V4a1 1 0 011-1z" stroke="#D4890A" stroke-width="1.8"/><path d="M8 8h6M8 12h6M8 16h3" stroke="#D4890A" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M5 3h12a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V4a1 1 0 011-1z" stroke="var(--accent)" stroke-width="1.8"/><path d="M8 8h6M8 12h6M8 16h3" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round"/></svg>
           </div>
           <h3>Notes &amp; screenshots</h3>
           <p>Attach chart screenshots, write the thesis, and tag the emotion. The context you'll wish you had six months from now.</p>
         </div>
         <div class="feature">
           <div class="f-icon">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="3" y="4" width="16" height="15" rx="2" stroke="#D4890A" stroke-width="1.8"/><path d="M3 9h16M8 2v4M14 2v4" stroke="#D4890A" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="3" y="4" width="16" height="15" rx="2" stroke="var(--accent)" stroke-width="1.8"/><path d="M3 9h16M8 2v4M14 2v4" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/></svg>
           </div>
           <h3>P&amp;L calendar</h3>
           <p>Your month at a glance. Spot overtrading streaks, revenge-trade days, and the sessions where you're sharpest.</p>
         </div>
         <div class="feature">
           <div class="f-icon">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="8" stroke="#D4890A" stroke-width="1.8"/><path d="M11 7v4l3 2" stroke="#D4890A" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="8" stroke="var(--accent)" stroke-width="1.8"/><path d="M11 7v4l3 2" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/></svg>
           </div>
           <h3>Weekly review ritual</h3>
           <p>A guided end-of-week review: unjournaled trades, rule breaks, and one lesson to carry forward. Discipline, systematized.</p>
@@ -387,7 +393,7 @@
       </div>
 
       <div class="security-note">
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1L2 3v4c0 3 2.2 5.2 5 6 2.8-.8 5-3 5-6V3L7 1z" stroke="#D4890A" stroke-width="1.3" stroke-linejoin="round"/><path d="M4.8 7l1.6 1.6L9.6 5.4" stroke="#D4890A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1L2 3v4c0 3 2.2 5.2 5 6 2.8-.8 5-3 5-6V3L7 1z" stroke="var(--accent)" stroke-width="1.3" stroke-linejoin="round"/><path d="M4.8 7l1.6 1.6L9.6 5.4" stroke="var(--accent)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
         Bank-grade encryption · Read-only access · Disconnect anytime
       </div>
     </div>
@@ -488,7 +494,14 @@
   <footer>
     <div class="wrap">
       <div class="foot-inner">
-        <div class="foot-logo"><span class="solo">Solo</span><span class="telos">Telos</span></div>
+        <div class="foot-logo">
+          <svg width="26" height="26" viewBox="16 12 56 56" fill="none" aria-hidden="true">
+            <path d="M30 16 L58 16" stroke="var(--logo-t)" stroke-width="3" stroke-linecap="round"/>
+            <path d="M44 16 L44 62" stroke="var(--logo-t)" stroke-width="3" stroke-linecap="round"/>
+            <path d="M58 24 C 46 20, 33 24, 33 34 C 33 42, 43 44, 47 46 C 55 49, 57 53, 55 58 C 52 65, 38 67, 31 61 L34 57 C 40 61, 49 60, 51 56 C 52 53, 49 50, 44 48 C 36 45, 29 42, 29 34 C 29 26, 44 18, 58 24 Z" fill="var(--logo-s)" transform="rotate(10 43 41)"/>
+          </svg>
+          <span><span class="solo">Solo</span><span class="telos">Telos</span></span>
+        </div>
         <div class="foot-links">
           <a href="index.html">Home</a>
           <a href="journal.html">Telos Journal</a>
