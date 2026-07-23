@@ -18,13 +18,10 @@
 
     <!-- Logo -->
     <g transform="translate(24,26)">
-      <g transform="scale(0.42)">
-        <line x1="10" y1="66" x2="72" y2="66" stroke="#272727" stroke-width="2"/>
-        <line x1="10" y1="52" x2="72" y2="52" stroke="#222" stroke-width="2"/>
-        <path d="M10 66 Q26 48 38 40 Q50 32 60 27" stroke="#5B8DB8" stroke-width="5" stroke-linecap="round" fill="none"/>
-        <line x1="64" y1="10" x2="64" y2="15" stroke="#5B8DB8" stroke-width="4" stroke-linecap="round"/>
-        <rect x="60" y="15" width="8" height="12" rx="1.5" fill="none" stroke="#5B8DB8" stroke-width="4"/>
-        <line x1="64" y1="27" x2="64" y2="33" stroke="#5B8DB8" stroke-width="4" stroke-linecap="round"/>
+      <g transform="translate(-6,-4) scale(0.5)">
+        <path d="M30 16 L58 16" stroke="#5B8DB8" stroke-width="3.4" stroke-linecap="round"/>
+        <path d="M44 16 L44 62" stroke="#5B8DB8" stroke-width="3.4" stroke-linecap="round"/>
+        <path d="M58 24 C 46 20, 33 24, 33 34 C 33 42, 43 44, 47 46 C 55 49, 57 53, 55 58 C 52 65, 38 67, 31 61 L34 57 C 40 61, 49 60, 51 56 C 52 53, 49 50, 44 48 C 36 45, 29 42, 29 34 C 29 26, 44 18, 58 24 Z" fill="#C7CED5" transform="rotate(10 43 41)"/>
       </g>
       <text x="42" y="23" font-size="16" fill="#ffffff" font-weight="300">Solo<tspan fill="#5B8DB8" font-weight="700" font-family="Philosopher, Georgia, serif">Telos</tspan></text>
     </g>
